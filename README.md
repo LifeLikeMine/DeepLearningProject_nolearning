@@ -1,5 +1,5 @@
 # 딥러닝 프로젝트
-> 딥러닝 프로젝트 nolearning팀
+> 딥러닝 프로젝트 NoLearning팀
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
