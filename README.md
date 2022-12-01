@@ -1,4 +1,4 @@
-# # 딥러닝 프로젝트
+# 딥러닝 프로젝트
 > 딥러닝 프로젝트 nolearning팀
 
 [![NPM Version][npm-image]][npm-url]
