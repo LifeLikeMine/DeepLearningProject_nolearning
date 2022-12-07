@@ -28,7 +28,7 @@ _더 많은 예제와 사용법은 [Wiki][wiki]를 참고하세요._
 ## 코드블럭 설명
 
 ```python
-//```뒤에 자신이 원하는 언어 (생략 가능)
+
 angle = 0.0
 angle_last = 0.0
 count_stops = 0
@@ -73,7 +73,7 @@ def execute(change):
             x = 0.0 
             y = 0.0
             speed_value = speed_control_slider.value
-            speed_value = speed_value/3 # 과속 방지턱 감지 시 속도 감소
+            speed_value = speed_value/3 # 과속 방지턱 감지시 속도 감소
         else:
             go_on = 1
             count_stops = 0
