@@ -45,7 +45,7 @@ def execute(change):
     prob_blocked = float(F.softmax(model_trt_collision(image_preproc), dim=1).flatten()[0])
     
     blocked_slider.value = prob_blocked    
-    slow_time=stopduration_slider.value
+    slow_time=slowduration_slider.value
     
     if go_on == 1:    
         if prob_blocked > blocked_threshold.value: 
