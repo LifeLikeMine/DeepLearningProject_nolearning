@@ -71,12 +71,6 @@ def execute(change):
             count_stops = 0
             
     
-    angle = math.atan2(x, y)        
-    pid = angle * steer_gain + (angle - angle_last) * steer_dgain
-    steer_val = pid + steer_bias 
-    angle_last = angle
-    robot.left_motor.value = max(min(speed_value + steer_val, 1.0), 0.0)
-    robot.right_motor.value = max(min(speed_value - steer_val, 1.0), 0.0) 
 ```
 
 
