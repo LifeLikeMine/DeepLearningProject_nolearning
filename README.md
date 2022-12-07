@@ -76,34 +76,3 @@ def execute(change):
 2. Collision Avoidance: [https://yermi.tistory.com/entry/%EA%BF%80%ED%8C%81-Github-Readme-%EC%98%88%EC%81%98%EA%B2%8C-%EA%BE%B8%EB%AF%B8%EA%B8%B0-Readme-Header-Badge-Widget-%EB%93%B1
 ](https://github.com/NVIDIA-AI-IOT/jetbot/tree/master/notebooks/collision_avoidance)
 3. https://developer.nvidia.com/embedded/community/jetson-projects
-
-## 그외의 팁
-
-취소선
-~~취소선~~
-
-
-인용글
-> 인용글 1
-> > 인용글 2
-> > > 인용글 3
-
-기울임
-*기울임 꼴*
-
-_기울임 꼴_
-
-
-굵은글씨
-
-**굵은 글씨**
-
-__굵은 글씨__
-
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
