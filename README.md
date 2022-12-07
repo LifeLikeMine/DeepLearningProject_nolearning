@@ -1,10 +1,6 @@
 # 딥러닝 프로젝트
 > 딥러닝 프로젝트 NoLearning팀
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 **딥러닝 프로젝트 주제 - Road following + Collision Avoidance을 활용한 과속방지턱**
 
 시연 영상 X
