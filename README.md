@@ -27,12 +27,64 @@ _더 많은 예제와 사용법은 [Wiki][wiki]를 참고하세요._
 
 ## 코드블럭 설명
 
-```c
+```python
 //```뒤에 자신이 원하는 언어 (생략 가능)
-#include <stdio.h>
-int main(void) {
-  printf("Hello World!");
-}
+angle = 0.0
+angle_last = 0.0
+count_stops = 0
+go_on = 1
+stop_time = 10 
+x = 0.0
+y = 0.0
+speed_value = speed_control_slider.value
+
+def execute(change):
+    global angle, angle_last, blocked_slider, robot, count_stops, stop_time, go_on, x, y, blocked_threshold
+    global speed_value, steer_gain, steer_dgain, steer_bias
+                
+    steer_gain = steering_gain_slider.value
+    steer_dgain = steering_dgain_slider.value
+    steer_bias = steering_bias_slider.value
+       
+    image_preproc = preprocess(change['new']).to(device)
+     
+    #Collision Avoidance 모델:
+    
+    prob_blocked = float(F.softmax(model_trt_collision(image_preproc), dim=1).flatten()[0])
+    
+    blocked_slider.value = prob_blocked    
+    stop_time=stopduration_slider.value
+    
+    if go_on == 1:    
+        if prob_blocked > blocked_threshold.value: 
+            count_stops += 1
+            go_on = 2
+        else:
+            #road following 감지
+            go_on = 1
+            count_stops = 0
+            xy = model_trt(image_preproc).detach().float().cpu().numpy().flatten()        
+            x = xy[0]            
+            y = (0.5 - xy[1]) / 2.0
+            speed_value = speed_control_slider.value
+    else:
+        count_stops += 1
+        if count_stops < stop_time:
+            x = 0.0 
+            y = 0.0
+            speed_value = speed_control_slider.value
+            speed_value = speed_value/3 # 과속 방지턱 감지 시 속도 감소
+        else:
+            go_on = 1
+            count_stops = 0
+            
+    
+    angle = math.atan2(x, y)        
+    pid = angle * steer_gain + (angle - angle_last) * steer_dgain
+    steer_val = pid + steer_bias 
+    angle_last = angle
+    robot.left_motor.value = max(min(speed_value + steer_val, 1.0), 0.0)
+    robot.right_motor.value = max(min(speed_value - steer_val, 1.0), 0.0) 
 ```
 
 
