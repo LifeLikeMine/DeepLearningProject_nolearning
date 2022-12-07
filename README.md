@@ -8,7 +8,7 @@
 
 ## 개발 환경
 
-<img src="https://img.shields.io/badge/#F37626?style=flat&logo=jupyter&logoColor=white"/>
+<img src="https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=Jupyter&logoColor=white"/>
 
 ## 사용 방법
 
