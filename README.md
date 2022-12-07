@@ -7,11 +7,11 @@
 
 ## 사용 방법
 
-Road following
+- Road following
 https://github.com/NVIDIA-AI-IOT/jetbot/tree/master/notebooks/road_following
 예시대로 dataset 추출 및 모델 생성
 
-Collision Avoidance
+- Collision Avoidance
 https://github.com/NVIDIA-AI-IOT/jetbot/tree/master/notebooks/collision_avoidance
 예시대로 dataset 추출 및 모델 생성
 dataset중 block에 충돌상황 사진 촬영
