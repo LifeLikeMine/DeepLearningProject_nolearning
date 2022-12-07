@@ -29,14 +29,6 @@ _더 많은 예제와 사용법은 [Wiki][wiki]를 참고하세요._
 
 ```python
 
-angle = 0.0
-angle_last = 0.0
-count_stops = 0
-go_on = 1
-stop_time = 10 
-x = 0.0
-y = 0.0
-speed_value = speed_control_slider.value
 
 def execute(change):
     global angle, angle_last, blocked_slider, robot, count_stops, stop_time, go_on, x, y, blocked_threshold
