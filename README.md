@@ -18,6 +18,8 @@ https://github.com/NVIDIA-AI-IOT/jetbot/tree/master/notebooks/collision_avoidanc
 예시대로 dataset 추출 및 모델 생성
 dataset중 block에 충돌상황 사진 촬영
 
+1. 각각 모델 생성
+2. 프로젝트 파일 실행
 
 
 ## 코드블럭 설명
