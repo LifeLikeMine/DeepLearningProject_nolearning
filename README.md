@@ -35,11 +35,12 @@ int main(void) {
 
 
 
-## README 
+## 참고
 
 1. Road Following: [https://github.com/kyechan99/capsule-render](https://github.com/NVIDIA-AI-IOT/jetbot/tree/master/notebooks/road_following)
-2. Collision Avoidance[https://yermi.tistory.com/entry/%EA%BF%80%ED%8C%81-Github-Readme-%EC%98%88%EC%81%98%EA%B2%8C-%EA%BE%B8%EB%AF%B8%EA%B8%B0-Readme-Header-Badge-Widget-%EB%93%B1
+2. Collision Avoidance: [https://yermi.tistory.com/entry/%EA%BF%80%ED%8C%81-Github-Readme-%EC%98%88%EC%81%98%EA%B2%8C-%EA%BE%B8%EB%AF%B8%EA%B8%B0-Readme-Header-Badge-Widget-%EB%93%B1
 ](https://github.com/NVIDIA-AI-IOT/jetbot/tree/master/notebooks/collision_avoidance)
+3. https://developer.nvidia.com/embedded/community/jetson-projects
 
 ## 그외의 팁
 
