@@ -5,7 +5,7 @@
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-딥러닝 프로젝트 주제 - Road following + Collision Avoidance 과속 방지턱
+**딥러닝 프로젝트 주제 - Road following + Collision Avoidance 과속 방지턱**
 
 시연 영상 X
 
@@ -49,8 +49,8 @@ int main(void) {
 
 ## README 
 
-1. [https://github.com/kyechan99/capsule-render](https://github.com/NVIDIA-AI-IOT/jetbot/tree/master/notebooks/road_following)
-2. [https://yermi.tistory.com/entry/%EA%BF%80%ED%8C%81-Github-Readme-%EC%98%88%EC%81%98%EA%B2%8C-%EA%BE%B8%EB%AF%B8%EA%B8%B0-Readme-Header-Badge-Widget-%EB%93%B1
+1. Road Following: [https://github.com/kyechan99/capsule-render](https://github.com/NVIDIA-AI-IOT/jetbot/tree/master/notebooks/road_following)
+2. Collision Avoidance[https://yermi.tistory.com/entry/%EA%BF%80%ED%8C%81-Github-Readme-%EC%98%88%EC%81%98%EA%B2%8C-%EA%BE%B8%EB%AF%B8%EA%B8%B0-Readme-Header-Badge-Widget-%EB%93%B1
 ](https://github.com/NVIDIA-AI-IOT/jetbot/tree/master/notebooks/collision_avoidance)
 
 ## 그외의 팁
