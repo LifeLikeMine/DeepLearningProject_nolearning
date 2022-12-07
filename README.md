@@ -5,7 +5,7 @@
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-한 두 문단으로 프로젝트 소개 글을 작성합니다.
+딥러닝 프로젝트 주제 - 
 
 ```[![이미지 텍스트](스크린샷 이미지)](유투브링크)```
 
