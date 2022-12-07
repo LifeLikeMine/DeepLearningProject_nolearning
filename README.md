@@ -31,7 +31,7 @@ dataset중 block에 충돌상황 사진 촬영
 
 
 def execute(change):
-    global angle, angle_last, blocked_slider, robot, count_stops, stop_time, go_on, x, y, blocked_threshold
+    global angle, angle_last, blocked_slider, robot, count_slow, slow_time, go_on, x, y, blocked_threshold
     global speed_value, steer_gain, steer_dgain, steer_bias
                 
     steer_gain = steering_gain_slider.value
@@ -45,30 +45,30 @@ def execute(change):
     prob_blocked = float(F.softmax(model_trt_collision(image_preproc), dim=1).flatten()[0])
     
     blocked_slider.value = prob_blocked    
-    stop_time=stopduration_slider.value
+    slow_time=stopduration_slider.value
     
     if go_on == 1:    
         if prob_blocked > blocked_threshold.value: 
-            count_stops += 1
+            count_slow += 1
             go_on = 2
         else:
             #road following 감지
             go_on = 1
-            count_stops = 0
+            count_slow = 0
             xy = model_trt(image_preproc).detach().float().cpu().numpy().flatten()        
             x = xy[0]            
             y = (0.5 - xy[1]) / 2.0
             speed_value = speed_control_slider.value
     else:
-        count_stops += 1
-        if count_stops < stop_time:
+        count_slow += 1
+        if count_slow < slow_time:
             x = 0.0 
             y = 0.0
             speed_value = speed_control_slider.value
             speed_value = speed_value/3 # 과속 방지턱 감지시 속도 감소
         else:
             go_on = 1
-            count_stops = 0
+            count_slow = 0
             
     
 ```
