@@ -5,42 +5,20 @@
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-딥러닝 프로젝트 주제 - 
+딥러닝 프로젝트 주제 - Road following + Collision Avoidance 과속 방지턱
 
-```[![이미지 텍스트](스크린샷 이미지)](유투브링크)```
+시연 영상 X
 
+## 사용 방법
 
-gif로 움짤 올리기
+Road following
+https://github.com/NVIDIA-AI-IOT/jetbot/tree/master/notebooks/road_following
+예시대로 dataset 추출 및 모델 생성
 
-```[![이미지 텍스트](gif 이미지)]```
-![demo4](https://user-images.githubusercontent.com/4470398/204947699-4feb33cd-ab75-41f6-bedd-10b22eb2e961.gif)
-
-
-
-깃헙의 LFS를 설명해 놓은 동영상을 링크 
-
-``` [![Video Label](http://img.youtube.com/vi/uLR1RNqJ1Mw/0.jpg)](https://youtu.be/uLR1RNqJ1Mw?t=0s) ```
-[![Video Label](http://img.youtube.com/vi/uLR1RNqJ1Mw/0.jpg)](https://youtu.be/uLR1RNqJ1Mw?t=0s) 
-
-
-
-
-
-![](../header.png)
-
-## 설치 방법
-
-OS X & 리눅스:
-
-```sh
-npm install my-crazy-module --save
-```
-
-윈도우:
-
-```sh
-edit autoexec.bat
-```
+Collision Avoidance
+https://github.com/NVIDIA-AI-IOT/jetbot/tree/master/notebooks/collision_avoidance
+예시대로 dataset 추출 및 모델 생성
+dataset중 block에 충돌상황 사진 촬영
 
 ## 사용 예제
 
@@ -68,34 +46,12 @@ int main(void) {
 ```
 
 
-## 업데이트 내역
-
-* 0.2.1
-    * 수정: 문서 업데이트 (모듈 코드 동일)
-* 0.2.0
-    * 수정: `setDefaultXYZ()` 메서드 제거
-    * 추가: `init()` 메서드 추가
-* 0.1.1
-    * 버그 수정: `baz()` 메서드 호출 시 부팅되지 않는 현상 (@컨트리뷰터 감사합니다!)
-* 0.1.0
-    * 첫 출시
-    * 수정: `foo()` 메서드 네이밍을 `bar()`로 수정
-* 0.0.1
-    * 작업 진행 중
-
-## 정보
-
-이름 – [@트위터 주소](https://twitter.com/dbader_org) – 이메일주소@example.com
-
-XYZ 라이센스를 준수하며 ``LICENSE``에서 자세한 정보를 확인할 수 있습니다.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
 
 ## README 
 
-1. https://github.com/kyechan99/capsule-render
-2. https://yermi.tistory.com/entry/%EA%BF%80%ED%8C%81-Github-Readme-%EC%98%88%EC%81%98%EA%B2%8C-%EA%BE%B8%EB%AF%B8%EA%B8%B0-Readme-Header-Badge-Widget-%EB%93%B1
-
+1. [https://github.com/kyechan99/capsule-render](https://github.com/NVIDIA-AI-IOT/jetbot/tree/master/notebooks/road_following)
+2. [https://yermi.tistory.com/entry/%EA%BF%80%ED%8C%81-Github-Readme-%EC%98%88%EC%81%98%EA%B2%8C-%EA%BE%B8%EB%AF%B8%EA%B8%B0-Readme-Header-Badge-Widget-%EB%93%B1
+](https://github.com/NVIDIA-AI-IOT/jetbot/tree/master/notebooks/collision_avoidance)
 
 ## 그외의 팁
 
