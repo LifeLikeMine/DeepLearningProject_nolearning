@@ -3,6 +3,7 @@
 
 **딥러닝 프로젝트 주제 - Road following + Collision Avoidance을 활용한 과속방지턱**
 
+카메라 오류로 인해 구현 실패
 
 시연 영상 X
 
