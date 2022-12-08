@@ -7,6 +7,10 @@
 
 시연 영상 X
 
+## 필요성
+
+- 자율주행시 도로에 존재하는 과속방지턱 상황을 대처할수있음
+
 ## 개발 환경
 
 <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=Jupyter&logoColor=white"/> <img src="https://img.shields.io/badge/NVIDIA-76B900?style=flat&logo=NVIDIA&logoColor=white"/>
