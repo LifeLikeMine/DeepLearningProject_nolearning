@@ -32,6 +32,8 @@ dataset중 block에 충돌상황 사진 촬영
 
 ## 코드블럭 설명
 
+- 슬라이더 계산
+
 ```python
 
 #Road Following sliders
@@ -52,6 +54,8 @@ display(image_widget)
 display(ipywidgets.HBox([blocked_slider, blocked_threshold, stopduration_slider]))
 
 ```
+
+- Road following + Collision Avoidance
 
 ```python
 
