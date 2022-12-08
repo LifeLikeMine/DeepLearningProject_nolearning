@@ -34,6 +34,27 @@ dataset중 block에 충돌상황 사진 촬영
 
 ```python
 
+#Road Following sliders
+speed_control_slider = ipywidgets.FloatSlider(min=0.0, max=1.0, step=0.01, description='speed control')
+steering_gain_slider = ipywidgets.FloatSlider(min=0.0, max=1.0, step=0.01, value=0.04, description='steering gain')
+steering_dgain_slider = ipywidgets.FloatSlider(min=0.0, max=0.5, step=0.001, value=0.0, description='steering kd')
+steering_bias_slider = ipywidgets.FloatSlider(min=-0.3, max=0.3, step=0.01, value=0.0, description='steering bias')
+
+display(speed_control_slider, steering_gain_slider, steering_dgain_slider, steering_bias_slider)
+
+#Collision Avoidance sliders
+blocked_slider = ipywidgets.FloatSlider(min=0.0, max=1.0, orientation='horizontal', description='blocked')
+stopduration_slider= ipywidgets.IntSlider(min=1, max=1000, step=1, value=10, description='time for stop') 
+blocked_threshold= ipywidgets.FloatSlider(min=0, max=1.0, step=0.01, value=0.8, description='blocked threshold')
+
+display(image_widget)
+
+display(ipywidgets.HBox([blocked_slider, blocked_threshold, stopduration_slider]))
+
+```
+
+```python
+
 
 def execute(change):
     global angle, angle_last, blocked_slider, robot, count_slow, slow_time, go_on, x, y, blocked_threshold
